@@ -37,20 +37,20 @@ struct MenuBox { int x, y, w, h; };
 // USER CONFIGURATION
 // ─────────────────────────────────────────────────────────────
 
-static const char* WIFI_SSID = "Agastya";
-static const char* WIFI_PASSWORD = "7458813029";
+static const char* WIFI_SSID = "YOUR WIFI_NAME";
+static const char* WIFI_PASSWORD = "YOUR WIFI_PASSWORD";
 
 // ─── Local music streaming over WiFi ───
 // Serve your downloaded files with a simple local server on your computer,
 // e.g. `python3 -m http.server 8000` run inside the folder containing them.
 // Set PLAYLIST_SERVER to that computer's local IP + port (find via ipconfig/
 // ifconfig — it looks like 192.168.1.XX). Both devices must be on the same WiFi.
-const char* PLAYLIST_SERVER = "http://192.168.0.101"; // HFS server address (port 80, default)
+const char* PLAYLIST_SERVER = "YOUR PLAYLIST SERVER ADDRESS"; // HFS server address (port 80, default)
 
 struct Track { const char* title; const char* filename; };
 Track playlist[] = {
-    {"Freaked Out",  "/MUsic%202/freaked%20out.mp3"},
-    {"Drag Race",    "/MUsic%202/drag%20race%20-%20resentful.mp3"},
+    {"SONG NAME 1",  "FILE NAME ON SERVER.mp3"},
+    {"SONG NAME 2",    "FILE NAME ON SERVER".mp3"},
     // Add more here, matching filenames in your served folder, e.g.:
     // {"My Song", "/MUSIC/my_song.mp3"},
 };
