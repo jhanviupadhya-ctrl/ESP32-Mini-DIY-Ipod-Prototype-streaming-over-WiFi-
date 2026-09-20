@@ -11,7 +11,9 @@ This is about New ESP32 player prototype Project . I have made use of cheap mate
 9. I2S MAX98357A class D amplifier along with speaker
 # Wirring
 Tft & ESP32             I2S MAX98357 A class d amplifier
-CS 15                       
+CS 15                     //< Bit clock       → GPIO27
+  ///< Left/right clock → GPIO26
+  ///< Data out         → GPIO25  
 RST 4
 AO 2
 SDA 23
